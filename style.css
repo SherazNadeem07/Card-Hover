@@ -1,0 +1,49 @@
+.body {
+    background-color: #2d3548;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0px, auto;
+    gap: 20px;
+}
+
+.content {
+    position: absolute;
+    padding: 25px;
+    color: white;
+    font-weight: bold;
+
+}
+
+.content>p {
+    font-size: larger;
+}
+
+.content>h3 {
+    text-transform: uppercase;
+    font-size: small;
+    text-shadow: 3px 3px 20px rgb(0, 0, 0, 0.2);
+}
+
+.card-img {
+    width: 300px;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+.container:hover>.card:not(:hover) .card-img {
+    filter: brightness(0.5) blur(10px);
+}
